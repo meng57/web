@@ -1,0 +1,371 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	width: 100%;
+}
+.main1{
+	width: 988px;
+	margin: 0 auto;
+}
+.mainh{
+	height: 93px;
+	width: 988px;
+	background: url(../img/biao.png) no-repeat 0 22px;
+	position: relative;
+}
+.mainh span a{
+	font-size: 14px;
+	color: #666666;
+	position: absolute;
+	left: 200px;
+	top: 36px;
+}
+.mainh em{
+	font-size: 16px;
+	color: #333333;
+	font-style: normal;
+	position: absolute;
+	right:90px ;
+	top:36px;
+}
+.mainh i{
+	position: absolute;
+	right: 8px;
+	top:33px ;
+}
+.mainh i a{
+	font-size: 14px;
+	color: #cc0000;
+	font-style: normal;
+	display: block;
+	width: 80px;
+	height: 25px;
+	text-align: center;
+	line-height:25px ;
+}
+.mainh i a:hover{
+	background: #c40000;
+	color: #FFFFFF;
+}
+.mainb{
+	width: 988px;
+	height: 766px;
+	border: 1px solid #e6e6e6;
+	position: relative;
+}
+.mainb .pp{
+	font-size: 18px;
+	color: #999999;
+	position: absolute;
+	left: 91px;
+	top: 24px;
+}
+.mainb1{
+	width: 520px;
+	border-top: 1px solid #e6e6e6;
+	position: absolute;
+	left: 88px;
+	top: 130px;
+}
+.mainb2{
+	width: 173px;
+	height: 29px;
+	border:1px solid #e6e6e6;
+	border-top: 3px solid #e02d2d ;
+	border-bottom: none;
+	position: absolute;
+	top: -42px;
+	left: 0;
+	background: #FFFFFF url(../img/shou.png) no-repeat 62px 6px ;
+	font-size: 19px;
+	color: #cc0000;
+	padding-left: 80px;
+	padding-top: 10px;
+}
+.shouji{
+	margin-top: 27px;
+	position: relative;
+	height: 83px;
+	float: left;
+	width: 520px;
+}
+.yanzheng,.huoqu,.mima,.queren{
+	height: 83px;
+	position: relative;
+	float: left;
+	width: 520px;
+	margin-top: 10px;
+}
+.espan1{
+	color: #ff3300;
+	/*position: absolute;
+	left: 14px;
+	top: 48px;*/
+	margin-right: 5px;
+	}
+.ela1{
+	font-size: 16px;
+	color: #666666;
+	position: absolute;
+	left: 7px;
+	top: 15px;
+}
+.ein1{
+	width: 280px;
+	height: 39px;
+	color: #cccccc;
+	position: absolute;
+	left: 90px;
+	top: 3px;
+}
+.ep1{
+	font-size: 12px;
+	color: #aaaaaa;
+	position: absolute;
+	left: 100px;
+	top: 51px;
+}
+.espan2{
+	display: block;
+	padding-left: 20px;
+	position: absolute;
+	left: 395px;
+	top: 15px;
+	font-size: 12px;
+	color: #FF0000;
+}
+.ei1{
+	display: block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/shop_login_bg.png) no-repeat -274px -91px;
+	float: left;
+}
+.ein2{
+	width: 168px;
+	height:39px ;
+	position: absolute;
+	left: 90px;
+}
+.espan3{
+	width: 97px;
+	height: 39px;
+	display: block;
+	position: absolute;
+	left: 270px;
+	top: 1px;
+	border: 1px solid #000;
+}
+.btn{
+	width: 107px;
+	height: 42px;
+	position: absolute;
+	left:270px ;
+	top: 1px;
+	/*border: 1px solid red;*/
+	background: #f8f8f8;
+	border: 1px solid  #999999;
+	font-size: 12px;
+	color: #666666;
+}
+.btn:hover{
+	background: #ccc;
+}
+.espn4 a{
+	font-size: 12px;
+	position: absolute;
+	left: 375px;
+	top: 15px;
+}
+.espn4 a:hover{
+	color: #FF0000;
+	text-decoration: underline;
+}
+.ein3{
+	position: absolute;
+	left: 90px;
+	top: 490px;
+}
+.ep2{
+	font-size: 12px;
+	color: #999999;
+	position: absolute;
+	left: 113px;
+	top: 490px;
+}
+.ep2 a{
+	color: #134ba0;
+}
+.ep2 a:hover{
+	color: #FF0000;
+	text-decoration: underline;
+}
+.ep3{
+	
+	position: absolute;
+	left: 90px;
+	top: 530px;
+	
+}
+.ep3 a{
+	display: block;
+	width: 290px;
+	height: 40px;
+	background: #dc2e2e;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 40px;
+}
+.ep3 a:hover{
+	background: #FF3333;
+}
+.ep4{
+	font-size: 12px;
+	color: #666666;
+	position: absolute;
+	left: 731px;
+	top: 89px;
+}
+.ep4 a{
+	color: #134ba0;
+}
+.ep4 a:hover{
+	color: #FF3333;
+	text-decoration: underline;
+}
+.ep5{
+	font-size: 12px;
+	color: #666666;
+	position: absolute;
+	left: 731px;
+	top: 112px;
+}
+.espan4 a{
+	width: 170px;
+	height: 36px;
+	display: block;
+	background: #f55643;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	left: 731px;
+	top: 147px;
+	line-height: 36px;
+	
+}
+.espan4 em{
+	width: 38px;
+	height: 37px;
+	display: block;
+	background: url(../img/shop_login_bg.png) no-repeat -0px -122px ;
+	float: left;
+	border-radius: 50%;
+	margin-right: 15px;
+	
+}
+.espan5 a{
+	width: 170px;
+	height: 36px;
+	display: block;
+	background: #039ae3;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	left: 731px;
+	top: 198px;
+	line-height: 36px;
+}
+.espan5 em{
+	width: 38px;
+	height: 37px;
+	display: block;
+	background: url(../img/shop_login_bg.png) no-repeat -39px -122px ;
+	float: left;
+	border-radius: 50%;
+	margin-right: 15px;
+	
+}
+.espan6 a{
+	width: 170px;
+	height: 36px;
+	display: block;
+	background: #f57601;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	left: 731px;
+	top: 249px;
+	line-height: 36px;
+}
+.espan6 em{
+	width: 38px;
+	height: 37px;
+	display: block;
+	background: url(../img/shop_login_bg.png) no-repeat -78px -122px ;
+	float: left;
+	border-radius: 50%;
+	margin-right: 15px;
+	
+}
+.espan7 a{
+	width: 170px;
+	height: 37px;
+	display: block;
+	background: #2932e1;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	line-height: 36px;
+	left: 731px;
+	top: 301px;
+	/*text-align: right;*/
+	
+}
+.espan7 em{
+	width: 38px;
+	height: 37px;
+	display: block;
+	background: url(../img/shop_login_bg.png) no-repeat -117px -122px ;
+	float: left;
+	border-radius: 50%;
+	margin-right: 15px;
+	
+}
+.foot{
+	width: 100%;
+	border-top: 1px solid #dcdcdc;
+	margin-top: 52px;
+}
+.foot1{
+	width:988px ;
+	padding-top: 16px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+.foot1 li{
+	float: left;
+}
+.foot1 li a{
+	font-size: 13px;
+	color: #666666;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.foot1 li a:hover{
+	text-decoration: underline;
+	color: #FF0000;
+}
+.foot1 p{
+	font-size: 13px;
+	color: #666666;
+	float: right;
+}

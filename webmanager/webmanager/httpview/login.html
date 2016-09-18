@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		用户名：<input type="text" id="name" /><br /><br />
+		密码： <input type="text" id="password" /><br /><br />
+		<input type="button" id="register" value="注册" /> 
+		<input type="button" id="login" value="登录" />
+		<script type="text/javascript">
+			var oName = document.getElementById("name");
+			var oPass = document.getElementById("password");
+			var btn1 = document.getElementById("register");
+			var btn2 = document.getElementById("login");
+			var txt1;
+			oName.onblur = function() {
+				 txt1 = oName.value;
+				if(txt1!="") {
+					var js = document.createElement("script");
+					js.src = "http://localhost:8080/user/CheckUserNameGet?username=" + txt1 + "&callback=fn";
+					document.body.appendChild(js);
+					fn=function(result) {
+						if(result == 1) {
+							alert("用户已存在，请重新输入");
+							//oName.value="";
+						} else {
+							alert("用户名可用，请继续输入密码");
+						}
+					}
+					document.body.removeChild(js);
+				}
+			}
+			
+			btn1.onclick = function(){
+				var txt2 = oPass.value;
+				if(txt2!="") {
+					var js = document.createElement("script");
+					js.src = "http://localhost:8080/user/registerGet?name="+txt1+"&password="+txt2+"&callback=fn";
+					document.body.appendChild(js);
+					fn=function(result) {
+						if(result == 1) {
+							alert("注册成功");
+							oName.value="";
+						} else {
+							alert("注册失败");
+						}
+					}
+					document.body.removeChild(js);
+				}
+			}
+			
+			btn2.onclick = function(){
+				var txt2 = oPass.value;
+				if(txt2!="") {
+					var js = document.createElement("script");
+					js.src = "http://localhost:8080/user/loginget?name="+txt1+"&password="+txt2+"&callback=fn";
+					document.body.appendChild(js);
+					fn=function(result) {
+						if(result == 1) {
+							alert("登录成功");
+							oName.value="";
+						} else {
+							alert("密码错误");
+						}
+					}
+					document.body.removeChild(js);
+				}
+				
+			}
+		</script>
+	</body>
+
+</html>

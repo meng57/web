@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link href="css/register.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="main1">
+				<div class="mainh">
+					<span><a href="#">中关村在线旗下网上商城</a></span>
+					<em>已经有ZOL商城账号?</em>
+					<i><a href="#">立即登录</a></i>
+				</div>
+				<div class="mainb">
+					<p class="pp">30秒快速注册，加入ZOL商城</p>
+					<div class="mainb1">
+						
+							<div class="mainb2">用户名注册</div>
+						<div class="shouji">
+						<label class="ela1"><span class="espan1">*</span>用户名:</label>
+						<input id="oname" class="ein1" type="text"  />
+						<p class="ep1">请填写用户名</p>
+						
+						</div>
+				
+						<div class="mima">
+							
+						<label class="ela1"><span class="espan1">*</span>密码:</label>
+						<input id="opass" class="ein1" type="text"  />
+						<p class="ep1">6-16位字母和数字的组合，不可用特殊字符</p>
+						
+						</div>
+						<div class="queren">
+							
+						<label class="ela1"><span class="espan1">*</span>确认密码:</label>
+						<input id="opass1" class="ein1" type="text"  />
+						<p class="ep1">再次输入密码</p>
+						
+						</div>
+						<input class="ein3" type="checkbox" />
+						<p class="ep2">同意<a class="ea1" href="#">《商城用户协议》</a><a class="ea2" href="#">《隐私权说明》</a></p>
+						<p class="ep3" id="btn"><a  href="#">注册</a></p>
+					</div>
+					<p class="ep4">如果您已经注册，请&nbsp;<a href="#">直接登录</a></p>
+					<p class="ep5">或者用以下方式登录：</p>
+					<span class="espan4"><a href="#"><em></em>新浪微博登录</a></span>
+					<span class="espan5"><a href="#"><em></em>腾讯QQ登录</a></span>
+					<span class="espan6"><a href="#"><em></em>支付宝账号登录</a></span>
+					<span class="espan7"><a href="#"><em></em>百度账号登录</a></span>
+				</div>
+			</div>
+		</div>
+		<script>
+			var oName=document.getElementById("oname");
+			var oPass=document.getElementById("opass");
+			var opass1=document.getElementById("opass1")
+			var oBtn=document.getElementById("btn")
+			var txt1;
+			
+			oName.onblur = function() {
+				 txt1 = oName.value;
+				if(txt1!="") {
+					var js = document.createElement("script");
+					js.src = "http://localhost:8080/user/CheckUserNameGet?username=" + txt1 + "&callback=fn";
+					document.body.appendChild(js);
+					fn=function(result) {
+						if(result == 1) {
+							alert("用户已存在，请重新输入");
+							//oName.value="";
+						} else {
+							alert("用户名可用，请继续输入密码");
+						}
+					}
+					document.body.removeChild(js);
+				}
+			}
+			
+			oBtn.onclick = function(){
+				var txt2 = oPass.value;
+				if(txt2!="") {
+					var js = document.createElement("script");
+					js.src = "http://localhost:8080/user/registerGet?name="+txt1+"&password="+txt2+"&callback=fn";
+					document.body.appendChild(js);
+					fn=function(result) {
+						if(result == 1) {
+							if(txt2==opass1.value){
+								alert("注册成功");
+								oName.value="";
+							}else{
+								alert("请确认密码")
+							}
+							
+						} else {
+							alert("注册失败");
+						}
+					}
+					document.body.removeChild(js);
+				}
+			}
+		</script>
+		<div class="foot">
+			<div class="foot1">
+				<ul>
+					<li><a href="#">关于ZOL商城</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">帮助中心</a></li>
+				</ul>
+				<p>@2016&nbsp;中关村在线&nbsp;版权所有</p>
+			</div>
+		</div>
+	</body>
+</html>

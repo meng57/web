@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0 ;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	width: 100%;
+	float: left;
+}
+.main1{
+	width: 988px;
+	height: 120px;
+	background: url(../img/biao.png) no-repeat 0 22px;
+	position: relative;
+	margin: 0 auto;
+}
+.mainh span a{
+	font-size: 14px;
+	color: #666666;
+	position: absolute;
+	left: 200px;
+	top: 36px;
+}
+.mainh em{
+	font-size: 16px;
+	color: #333333;
+	font-style: normal;
+	position: absolute;
+	right:90px ;
+	top:36px;
+}
+.mainh i{
+	position: absolute;
+	right: 8px;
+	top:33px ;
+}
+.mainh i a{
+	font-size: 14px;
+	color: #cc0000;
+	font-style: normal;
+	display: block;
+	width: 80px;
+	height: 25px;
+	text-align: center;
+	line-height:25px ;
+}
+.mainh i a:hover{
+	background: #c40000;
+	color: #FFFFFF;
+}
+.new{
+	width: 988px;
+	height: 350px;
+	position: absolute;
+	left: 0px;
+	top: 120px;
+	border: 1px solid #e6e6e6;
+}
+.new img{
+	width: 522px;
+	height: 350px;
+}
+.rspan1{
+	font-size: 19px;
+	color: #666666;
+	position: absolute;
+	left: 612px;
+	top: 25px;
+}
+.rspan2 a{
+	font-size: 12px;
+	color: #333333;
+	position: absolute;
+	left: 800px;
+	top: 24px;
+	line-height: 20px;
+}
+.rspan2 a:hover{
+	color: #FF0000;
+	text-decoration: underline;
+}
+.rspan2 em{
+	width:14px;
+	height: 17px;
+	display: block;
+	float: left;
+	background: url(../img/shop_login_bg.png) no-repeat -276px -117px ;
+	margin-right: 7px;
+}
+.rin1{
+	width: 288px;
+	height: 40px;
+	color: #a9a9a9;
+	font-size: 14px;
+	position: absolute;
+	left: 612px;
+	top: 79px;
+}
+.rin2{
+	width: 288px;
+	height: 40px;
+	position: absolute;
+	left: 612px;
+	top: 130px;
+	color: #a9a9a9;
+	font-size: 14px;
+	
+}
+.rspan3 a{
+	font-size: 12px;
+	color: #134ba0;
+	position: absolute;
+	left: 841px;
+	top: 185px;
+}
+.rspan3 a:hover{
+	color: #FF0000;
+	text-decoration: underline;
+}
+.rspan4 a{
+	display: block;
+	width: 288px;
+	height: 40px;
+	background: url(../img/shop_login_bg.png) no-repeat 0 0;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	left: 612px;
+	top: 210px;
+}
+.rspan4 a:hover{
+	background: url(../img/shop_login_bg.png) no-repeat  0 -41px;
+}
+.rspan5{
+	font-size: 12px;
+	color: #666666;
+	position: absolute;
+	left: 612px;
+	top: 277px;
+}
+.rspan6 a{
+	display: block;
+	width: 39px;
+	height: 39px;
+	background: url(../img/shop_login_bg.png) no-repeat 0 -82px;
+	position: absolute;
+	left: 700px;
+	top: 265px;
+}
+.rspan6 a:hover{
+	background: url(../img/shop_login_bg.png) no-repeat 0 -120px;
+}
+.rspan7 a{
+	display: block;
+	width: 39px;
+	height: 39px;
+	background: url(../img/shop_login_bg.png) no-repeat -38px -82px;
+	position: absolute;
+	left: 748px;
+	top: 265px;
+}
+.rspan7 a:hover{
+	background: url(../img/shop_login_bg.png) no-repeat -38px -120px;
+}
+.rspan8 a{
+	display: block;
+	width: 39px;
+	height: 39px;
+	background: url(../img/shop_login_bg.png) no-repeat -76px -82px;
+	position: absolute;
+	left: 799px;
+	top: 265px;
+}
+.rspan8 a:hover{
+	background: url(../img/shop_login_bg.png) no-repeat -78px -120px;
+}
+.rspan9 a{
+	display: block;
+	width: 39px;
+	height: 39px;
+	background: url(../img/shop_login_bg.png) no-repeat -116px -82px;
+	position: absolute;
+	left: 848px;
+	top: 265px;
+}
+.rspan9 a:hover{
+	background: url(../img/shop_login_bg.png) no-repeat -116px -120px;
+}
+.foot{
+	width: 100%;
+	border-top: 1px solid #dcdcdc;
+	margin-top: 52px;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 541px;
+}
+.foot1{
+	width:988px ;
+	padding-top: 16px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+.foot1 li{
+	float: left;
+}
+.foot1 li a{
+	font-size: 13px;
+	color: #666666;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.foot1 li a:hover{
+	text-decoration: underline;
+	color: #FF0000;
+}
+.foot1 p{
+	font-size: 13px;
+	color: #666666;
+	float: right;
+}

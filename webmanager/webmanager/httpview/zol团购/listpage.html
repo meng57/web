@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/listpage.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/listpage.js"></script>
+		
+	</head>
+	<body>
+	<div class="nav">
+		<div id="cart"><a href="#"><img class="img" src="img/shopping211.png"/><span>0</span></a></div>
+	<div class="nav1">
+
+	<ul class="ul1">
+		<li class="li1"><a href="#">ZOL商城首页</a></li>
+		<li class="li2"><a href="#">中关村在线</a></li>
+	</ul>
+	<ul class="ul2">
+		<li class="li5"><a id="aclick" href="login.html">请登录</a></li>
+		<li><a href="register.html">免费注册</a></li>
+		<li><a href="#">我的订单</a></li>
+		<li class="li3"><a href="#">关注团购</a></li>
+		<li id="li4"><a href="#">订阅推荐</a></li>
+		<li class="li5"><a href="#">帮助中心</a></li>
+	</ul>
+	<span class="span1"></span>
+	<span class="span2"></span>
+	<div id="div2">
+		<p class="p1">请输入邮箱地址</p>
+		<input type="text" class="in1"/>
+		<input type="button" class="in2" value="确定"/>
+		<p class="p2">推荐时间：每周二、四、六(节假日除外)</p>
+	</div>
+	<div class="div2"></div>
+	</div>
+	</div>
+	<div class="fhead">
+		<div class="fhead1">
+			<input class="in3" type="text" value="游戏本" />
+			<input class="in4" type="button" value="搜索" />
+			<ul class="ul3">
+				<li><a href="#">游戏主机</a></li>
+				<li><a href="#">华为品牌团</a></li>
+				<li><a href="#">GTX1060游戏本</a></li>
+			</ul>
+			<span class="span3"><a href="#">购专业&nbsp;购放心</a></span>
+			<span class="span4">客服电话:<span class="span5">400-678-0068</span></span>
+		</div>
+	</div>
+	<div class="fenlei">
+		<div class="fenlei1">
+			<ul id="ul4">
+				<li id="li1">团购商品分类
+					<ul class="ul5">
+						<li><a href="#">手机通讯</a></li>
+						
+						<li><a href="#">影像/智能数码</a></li>
+						
+						<li><a href="#">笔记本电脑</a></li>
+						
+						<li><a href="#">电脑外设</a></li>
+						
+						<li><a href="#">DIY主机/配件</a></li>
+						
+						<li><a href="#">家电/其他</a></li>
+						
+						<li><a href="#">智能生活</a></li>
+						<span class="span span6"></span>
+						<span class="span span7"></span>
+						<span class="span span8"></span>
+						<span class="span span9"></span>
+						<span class="span span10"></span>
+						<span class="span span11"></span>
+					</ul>
+				</li>
+				<li class="lia"><a href="#">首页</a></li>
+				<li class="lia"><a href="#">单品团</a></li> 
+				<li class="lia"><a href="#">预约团</a></li> 
+				<li class="lia"><a href="#">即将开团</a></li> 
+			</ul>
+			<span class="mspan1"><a href="#">新款VR装备&nbsp;体验虚拟现实</a></span>
+		</div>
+	</div>
+	<script>
+		var oli=document.getElementById("li1");
+		var oul4=document.getElementById("ul4");
+		oli.onmouseover=function(){
+			oul4.style.overflow="visible";
+		}
+		oli.onmouseout=function(){
+			oul4.style.overflow="hidden";
+		}
+	</script>
+	<div class="list">
+		<div class="list1">
+			<div class="list2">
+				<ul>
+					<li><a href="#">全部</a></li>
+					<li class="oli1"><a href="#">手机通讯<span>65</span></a></li>
+					<li><a href="#">数码影像<span>50</span></a></li>
+					<li><a href="#">笔记本电脑<span>65</span></a></li>
+					<li><a href="#">手机通讯<span>29</span></a></li>
+					<li><a href="#">电脑外设<span>26</span></a></li>
+					<li><a href="#">DIY主机/配件<span>14</span></a></li>
+					<li><a href="#">家电/其他<span>36</span></a></li>
+					<li><a href="#">智能生活<span>6/span></a></li>
+				</ul>
+			</div>
+			<div class="list3">
+				<ul>
+					<li class="oli2"><a href="#">默认</a></li>
+					<li><a href="#">最新团购</a></li>
+					<li><a href="#">销量</a></li>
+					<li><a href="#">价格</a></li>
+					<li><a href="#">关注度</a></li>
+				</ul>
+			</div>
+			<div class="list4">
+				<ul id="mu5"></ul>
+			</div>
+			<div class="list5">
+				<ul>
+					<li class="oli3"><a href="#">1</a></li>
+					<li class="oli4"><a href="#">2</a></li>
+					<li class="oli4"><a href="#">3</a></li>
+					<li class="oli5"><a href="#">下一页</a></li>
+				</ul>
+			</div>
+			<div class="mylist1">
+					<h3>大家都在看什么</h3>
+					<a id="aright" href="#">></a>
+					<a id="aleft" href="#"><</a>
+					<ul id="mu6"></ul>
+					<!--<ul id="mu7"></ul>
+					<ul id="mu8"></ul>-->
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	<div class="footh">
+		<div class="footh1">
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="#">常购物流程</a></dd>
+				<dd><a href="#">优惠券红包</a></dd>
+				<dd><a href="#">常见问题</a></dd>
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a href="#">申请退款</a></dd>
+				<dd><a href="#">售后政策</a></dd>
+				<dd><a href="#">售后问题</a></dd>
+			</dl>
+			<dl>
+				<dt>团购特点</dt>
+				<dd><a href="#">Z团优势</a></dd>
+				<dd><a href="#">参团效果</a></dd>
+				<dd><a href="#">往期团购</a></dd>
+			</dl>
+			<dl>
+				<dt>商务合作</dt>
+				<dd><a href="#">媒体合作</a></dd>
+				<dd><a href="#">团购合作</a></dd>
+			</dl>
+			<dl>
+				<dt>商城服务</dt>
+				<dd><a href="#">400-678-0068</a></dd>
+				<dd><a href="#">工作日(9:00-18:00)</a></dd>
+				<dd><a href="#">关注新浪微博</a></dd>
+			</dl>
+			<p></p>
+			<span>微信关注：ZOL商城</span>
+			<i>扫码赢优惠 订单时时查</i>
+		</div>
+	</div>
+	<div class="footb">
+		<div class="footb1">
+			<span class="wspan1">合作伙伴:</span>
+			<ul class="wu1">
+				<li><a href="#">卷皮网</a></li>
+				<li><a href="#">电子商务平台</a></li>
+				<li><a href="#">中国电子银行网</a></li>
+				<li><a href="#">华为商城</a></li>
+				<li><a href="#">三帝贸易网</a></li>
+				<li><a href="#">团购</a></li>
+				<li><a href="#">eNet商城</a></li>
+				<li><a href="#">易趣</a></li>
+				<li><a href="#">家具网</a></li>
+				<li><a href="#">手表品牌大全</a></li>
+				<li><a href="#">钻石</a></li>
+				<li><a href="#">伊秀女性网</a></li>
+				<li><a href="#">华强电子网</a></li>
+			</ul>
+			<ul class="wu2">
+				<li><a href="#">电子产品世界</a></li>
+				<li><a href="#">挖东西比价网</a></li>
+				<li><a href="#">广告网</a></li>
+				<li><a href="#">易购网</a></li>
+			</ul>
+			<ul class="wu3">
+				<li><a href="#">中关村在线</a></li>
+				<li><a href="#">ZOL商城</a></li>
+				<li><a href="#">Z团</a></li>
+				<li><a href="#">限时抢购</a></li>
+				<li><a href="#">经销商</a></li>
+				<li><a href="#">产品报价</a></li>
+				<li><a href="#">论坛</a></li>
+				<li><a href="#">问答</a></li>
+			</ul>
+			<ul class="wu4">
+				<li>关于ZOL商城</li>
+				<li>帮助中心</li>
+				<li>联系我们</li>
+				<li>发展历程</li>
+				<li>媒体报道</li>
+			</ul>
+			<p>2016中关村在线&nbsp;版权所有&nbsp;京ICP证150096号&nbsp;京ICP备14061128号&nbsp;京公网安备11010802020026号&nbsp;网络文化经营许可证京网文[2016]1631-199</p>
+			<i><a href="#">广告</a></i>
+		</div>
+	</div>
+	</body>
+</html>

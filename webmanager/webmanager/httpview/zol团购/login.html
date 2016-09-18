@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<link href="css/login.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="main1">
+				<div class="mainh">
+					<span><a href="#">中关村在线旗下网上商城</a></span>
+					<em>已经有ZOL商城账号?</em>
+					<i><a href="#">立即登录</a></i>
+				</div>
+				<div class="new">
+					<img src="img/deng.jpg" />
+					<span class="rspan1">登录ZOL商城</span>
+					<span class="rspan2"><a href="#"><em></em>手机动态码登录</a></span>
+					<input id="oname" class="rin1" type="text" value="用户名" />
+					<input id="opass" class="rin2" type="text" value="密码" />
+					<span class="rspan3"><a href="#">忘记密码？</a></span>
+					<span class=" rspan4" id="btn"><a href="#">登录</a></span>
+					<span class="rspan5">合作账号登录:</span>
+					<span class="rspan6"><a href="#"></a></span>
+					<span class="rspan7"><a href="#"></a></span>
+					<span class="rspan8"><a href="#"></a></span>
+					<span class="rspan9"><a href="#"></a></span>
+				</div>
+			</div>
+		</div>
+		<script>
+		var btn2=document.getElementById("btn");
+		var oName=document.getElementById("oname");
+		var oPass=document.getElementById("opass");
+		
+			btn2.onclick = function(){
+				var txt1=oName.value;
+				var txt2 = oPass.value;
+				if(txt2!="") {
+					var js = document.createElement("script");
+					js.src = "http://localhost:8080/user/loginget?name="+txt1+"&password="+txt2+"&callback=fn";
+					document.body.appendChild(js);
+					fn=function(result) {
+						if(result == 1) {
+							alert("登录成功");
+//							oName.value="";
+						} else {
+							alert("登录失败，请检查用户名以及密码是否正确！");
+							oPass.value="";
+						}
+					}
+					document.body.removeChild(js);
+				}
+				
+			}
+		</script>
+		<div class="foot">
+			<div class="foot1">
+				<ul>
+					<li><a href="#">关于ZOL商城</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">帮助中心</a></li>
+				</ul>
+				<p>@2016&nbsp;中关村在线&nbsp;版权所有</p>
+			</div>
+		</div>
+	</body>
+</html>

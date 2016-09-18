@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/xiangqing.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="nav">
+		<div id="cart"><a href="shopping.html"><img id="cartimg" class="img" src="img/shopping211.png"/><span id="cartspan">0</span></a></div>
+	<div class="nav1">
+
+	<ul class="ul1">
+		<li class="li1"><a href="#">ZOL商城</a></li>
+		<li class="li2"><a href="#">收藏</a></li>
+	</ul>
+	<ul class="ul2">
+		<li class="li5"><a id="aclick" href="login.html">您好，abc</a></li>
+		<li><a href="register.html">退出</a></li>
+		<li><a href="#">我的订单</a></li>
+		
+	</ul>
+	<span class="span1"></span>
+	<span class="span2"></span>
+	<div id="div2">
+		<p class="p1">请输入邮箱地址</p>
+		<input type="text" class="in1"/>
+		<input type="button" class="in2" value="确定"/>
+		<p class="p2">推荐时间：每周二、四、六(节假日除外)</p>
+	</div>
+	<div class="div2"></div>
+	</div>
+	</div>
+	<div class="fhead">
+		<div class="fhead1">
+			<input class="fin1" type="text" value="请输入商品名"/>
+			<input class="fin2" type="button" value="搜索"/>
+			<span class="fspan1">配送保障</span>
+			<span class="fspan2">无忧退换</span>
+			<span class="fspan3">服务保障</span>
+			
+		</div>
+	</div>
+	<div class="list">
+		<div class="list1">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">单品团</a></li>
+				<li><a href="#">预约团</a></li>
+				<li><a href="#">即将开团</a></li>
+			</ul>
+			<span class="fspan4">最近浏览</span>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main1">
+			<img src="img/main.jpg" />
+			<p class="mp1">ThinkPad L460商用级本 i5 固态 六芯电池</p>
+			<p class="mp2">商用级高配！高分屏，128GB+500GB混合硬盘，速度快，容量足</p>
+			<p class="mp4">赠：包+鼠标+键盘膜+屏幕膜+蓝牙耳机</p>
+			<p class="mp3">
+				<span class="ps1">￥4950</span>
+				<span class="ps2">￥5599</span>
+				<span class="ps3">8.8折</span>
+			</p>	
+			<span class="ps4"><a href="#">马上抢购</a></span>
+			<span id="ps5"><a href="#">加入购物车</a></span>
+		</div>
+	</div>
+	<script>
+		var oimg=document.getElementById("cartimg");
+		var ocartspan=document.getElementById("cartspan");
+		var ops=document.getElementById("ps5");
+		var count=0;
+		ops.onclick=function(){
+			count++;
+			ocartspan.innerHTML=count;
+		}
+	</script>
+	</body>
+</html>

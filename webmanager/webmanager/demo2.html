@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="div1">
+			
+		</div>
+		<script type="text/javascript">
+			var oDiv1 = document.getElementById("div1");
+		 var xhr;
+        if (window.XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+        } else {
+        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+        //var arrUser = eval("(" + xhr.responseText + ")");
+        oDiv1.innerHTML = xhr.responseText;
+        } else {
+        alert("失败");
+        }
+        }
+        }
+		
+      	xhr.open("get", "http://localhost:8080/user/getAllUsers", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send();
+		
+		/*	xhr.open("post", "http://10.9.163.137:8080/user/register?name=rwr&password=rwr&callback=fn", true);
+			xhr.open("get", "http://10.9.163.137:8080/user/getAllUsers?callback=fn", true);
+			//xhr.open("post", "http://10.9.163.137:8080/user/CheckUserName?username=rwr&callback=fn",true);
+			//xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhr.send();*/
+		</script>
+	</body>
+
+</html>

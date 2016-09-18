@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接口</title>
+</head>
+<body>
+<div>
+    <p>http://localhost:8081/user/CheckUserNameGet?username=gao&callback=fn</p>
+    <p>
+        username:检测的用户名
+        callback:回调函数：
+        访问方式：get;
+        jsonp 跨域；
+        1：存在
+        -1：不存在
+    </p>
+    <p>http://10.9.163.115:8081/user/CheckUserName</p>
+    <p>
+        post:
+        同源下：XMLHTTPRequest
+    </p>
+    <p>
+        var xhr;
+        if (window.XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+        } else {
+        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+        //var arrUser = eval("(" + xhr.responseText + ")");
+        oDiv1.innerHTML = xhr.responseText;
+        } else {
+        alert("失败");
+        }
+        }
+        }
+
+        xhr.open("post", "http://localhost:63486/user/CheckUserName", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send("name=gao&callback=fn");
+    </p>
+</div>
+
+<div>
+    <p>http://10.9.163.115:8081/user/getAllUsers?callback=fn</p>
+    <p>
+        get:
+    </p>
+</div>
+
+
+<div>
+    <p>http://10.9.163.115:8081/user/registerGet?name=gao&password=gao&callback=fn</p>
+    <p>
+        1:成功
+        -1：失败
+    </p>
+            上面的是jsonp的 get方法 可以跨域
+    	下面的是Ajax post方法 需要放到自己的网站下面执行 （我的demo3是AJAX   ----  demo2 是JSONP ）
+    <p>http://10.9.163.115:8081/user/register?name=gao&password=gao&callback=fn</p>
+</div>
+
+
+<div>
+    <p>http://10.9.163.115:8081/user/loginget?name=gao&password=gao&callback=fn </p>
+    <p>
+        1:成功
+        -1:失败
+    </p>
+    <p>http://10.9.163.115:8081/user/login?name=gao&password=gao&callback=fn</p>
+</div>
+</body>
+</html>
